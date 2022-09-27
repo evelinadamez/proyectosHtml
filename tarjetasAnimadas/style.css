@@ -55,6 +55,17 @@ body {
     font-size: 28px;
 }
 
+.cards .card .footer .autor a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards .card .footer img{
+    width: 48px;
+    border-radius: 50%;
+}
+
 .cards .card[class*="tarjeta"]{
     margin-left: -100px;
 }
