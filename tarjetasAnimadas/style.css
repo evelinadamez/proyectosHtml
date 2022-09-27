@@ -23,6 +23,8 @@ body {
     flex-direction: column;
 
     transition: all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2),
+    -5px 0 10px rgba(0, 0, 0, 0.1)
 }
 
 .cards .card a{
@@ -51,4 +53,13 @@ body {
 
 .cards .card .header .title{
     font-size: 28px;
+}
+
+.cards .card[class*="tarjeta"]{
+    margin-left: -100px;
+}
+
+.tarjeta-1:hover
+.tarjeta-2:hover{
+    margin-left: -130px;
 }
