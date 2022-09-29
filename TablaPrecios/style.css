@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(186, 122, 247);
+    background-color: rgb(64, 1, 123);
 }
 .price-table-container{
     width: 900px;
@@ -10,7 +10,7 @@ body{
     align-items: center;
     margin: 100px auto;   
 }
-.price-table-container.table{
+.price-table-container .table{
     width: 300px;
     height: 442px;
     padding: 30px;
@@ -18,6 +18,52 @@ body{
     position: relative;
     z-index: 100;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.price-table-container .table:first-child{
+    border-radius: 10px 0 0 10px;
+}
+.price-table-container .table:last-child{
+    border-radius: 0 10px 10px 0;
+}
+.price-table-container  .table.recommended{
+    height: 500px;
+    border-radius: 10px;
+    padding: 50px 30px 60px 30px;
+    z-index: 200;
+    box-shadow:0 0 20px rgb(0, 0, 0, 0.5);
+    z-index: 200;
+    box-shadow: 0 0 20px rgba(0, 0, 0.5);
+}
+.price-table-container  .table .title{
+    font-weight: bold;
+    text-align: center;
+    font:20px;
+}
+.price-table-container  .table .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
+}
+.price-table-container  .table .price .currecy{
+    font-size: 25px;
+}
+.price-table-container  .table .price .number{
+    font-size: 60px;
+    font-weight:bold;
+}
+.price-table-container  .table .price .frequency{
+    color: #999;
+}
+.price-table-container  .table .features{
+    flex: 1;
+}
+.price-table-container  .table  .features ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
